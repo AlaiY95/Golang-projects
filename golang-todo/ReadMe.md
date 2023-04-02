@@ -1,6 +1,7 @@
-To start app
+To start app:
 
 go build
+
 go run main.go
 
 brew services start mongodb-community@4.4
