@@ -24,4 +24,7 @@ SELECT * FROM public.books;
 
 
 To fix:
-CreateBook function works when using curl but gives "Method Not Allowed" error when usign Postman o_O. Strange. 
+CreateBook function works when using curl but gives "Method Not Allowed" error when usign Postman o_O. Strange:
+Fixed! There was a trailing space i the url in Postman! I found this when looking at the the curl request sent by postman! 
+Postman was sending the curl below and when pasted into terminal gave curl: (3) URL using bad/illegal format or missing URL!!!
+curl --location --request POST 'http://localhost:8080/api/create_books/ ' \ --header 'Content-Type: application/json' \ --data-raw '{     "author":"Skepta",     "title":"BoyBetterKnow",     "publisher":"Psychosis" }'
