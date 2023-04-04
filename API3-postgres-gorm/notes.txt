@@ -1,0 +1,27 @@
+To DO;
+
+1. Create new user (Alai) in postgres database
+2. Change .env with updates variables
+3. Add some logic tests for sanity checking 
+
+Improvements
+Use SQLBoiler instead of GORM as GORM gives abstraction which is not ideal when trying to pinpoint errors.
+
+CreateBook function
+curl -X POST -H "Content-Type: application/json" -d '{"author":"Ron Weasly","title":"Harry Potter","publisher":"J K Rowlings"}' http://localhost:8080/api/create_books
+
+Delete Book function
+curl -X DELETE http://localhost:8080/api/delete_book/1 
+
+GetBook function
+curl -X GET http://localhost:8080/api/get_books/1 
+
+GetBooks function
+curl -X GET http://localhost:8080/api/books
+
+Can also view the books created in Postgres using:
+SELECT * FROM public.books;
+
+
+To fix:
+CreateBook function works when using curl but gives "Method Not Allowed" error when usign Postman o_O. Strange. 
