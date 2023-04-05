@@ -1,0 +1,8 @@
+Install modules we imported in client and servr code.
+
+// Download all modoles
+go mod tidy
+
+go run usermgmt_server/usermgmt_server.go
+
+go run usermgmt_client/usermgmt_client.go
