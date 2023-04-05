@@ -8,7 +8,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/alaiy95/go-projects/grpc-unary-service/usermgmt"
+	pb "github.com/alaiy95/golang-projects/grpc-unary-service/usermgmt"
 	"google.golang.org/grpc"
 )
 
